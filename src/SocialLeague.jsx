@@ -1,10 +1,10 @@
 import Header from "./Header.jsx";
 
-function social_league() {
+function NationalLeague() {
     return (
       <Header />
       
     );
   }
 
-export default social_league;
+export default NationalLeague;
