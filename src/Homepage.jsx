@@ -13,7 +13,7 @@ function homepage() {
 
       <Header />
       <div className="flex justify-center">
-        <h1 className="text-xl py-4 text-orange-400">Welcome to Wellington Canoe Polo Association</h1>
+        <h2 className="text-3xl py-4 text-orange-400 font-bold flex justify-center">Welcome to Wellington Canoe Polo Association</h2>
       </div>
 
       <div className="flex flex-row justify-around">
