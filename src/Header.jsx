@@ -4,8 +4,8 @@ import logo from './images/WCPA_logo.png'
 
 function Header() {
   return (
-    <div className="flex flex-row px-1 justify-between items-center h-20 w-full bg-orange-400">
-
+    <div className="flex flex-row px-1 justify-between items-center h-32 w-full bg-orange-400">
+      
       <i class="xs:hidden ml-2 text-3xl fa-solid fa-bars"></i>
 
       <Link to="/" className="pr-2 mx-auto pt-1">
@@ -16,25 +16,23 @@ function Header() {
 
       <div className="hidden xs:flex flex-row b-2 justify-evenly items-center p-1 w-full">
 
-        <Link to="/national_league">
-          <button className="text-white text-2xl hover:text-gray-400"> National League </button>
-        </Link>
+        <HeaderButton label="National League" link="/national_league" />
+        <HeaderButton label="Social League" link="/soacial_league" />
+        <HeaderButton label="Registration" link="/registration" />
+        <HeaderButton label="Committee" link="/committee" />
 
-        <Link to="/social_league">
-          <button className="text-white text-2xl hover:text-gray-400"> Social League </button>
-        </Link>
-
-        <Link to="/registration">
-          <button className="text-white text-2xl hover:text-gray-400"> Registration </button>
-        </Link>
-
-        <Link to="/committee">
-          <button className="text-white text-2xl hover:text-gray-400"> Committee </button>
-        </Link>
       </div>
 
     </div>
 
+  );
+}
+
+function HeaderButton({ link, label }) {
+  return(
+    <Link to={link}>
+      <button className="bg-orange-400 p-4 rounded-2xl hover:bg-slate-500 hover:text-orange-400 text-3xl font-medium text-slate-500 "> {label} </button>
+    </Link>
   );
 }
 

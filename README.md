@@ -71,3 +71,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+MVP for WCPA website
+
+
+1. Homepage
+Club logo and banner image.
+Short welcome message.
+Call-to-action (e.g. “Join a League”, “Try Canoe Polo”).
+
+2. About Page
+What is Canoe Polo?
+Club history and mission.
+Photos or video highlight reel.
+
+3. Leagues Section
+National League page:
+Game schedule.
+Team info.
+Results (basic table).
+Social League page:
+Play times.
+Casual player info.
+
+4. Registration Page
+Online form (name, email, age, skill level, etc.)
+Options to join National or Social League.
+Payment placeholder or note for manual payment.
+
+5. Committee Page
+List of current committee members with roles.
+Contact info (email or form).
+
+6. Contact Page
+Email form.
+Club email and location (Google Maps embed).
+Social media links (Facebook, Instagram, etc.).

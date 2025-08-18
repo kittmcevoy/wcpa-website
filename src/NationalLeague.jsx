@@ -2,8 +2,10 @@ import Header from "./Header.jsx";
 
 function NationalLeague() {
 
-  const KnightsTeam = ["Thomas McDermott", "Kitt McEvoy", "Luke Gray", "Jocob Holmes", "Zander Galloway", "Charles Irvine-Ford", "Josh Bird", "Canon Larsen"];  
-    return (
+  const KnightsTeam = ["Thomas McDermott", "Kitt McEvoy", "Luke Gray", "John Flitcroft", "", "Charles Irvine-Ford", "Josh Bird", "Canon Larsen (C)"];  
+  const PaladinsTeam = ["Zoe Dunbar", "Jack Arcus", "Corban James", "Jacob Holmes", "Zander Galloway (C)", "Adam Bird", "Matthew Hollows"]; 
+  const QueensTeam = ["Zoe Dunbar (C)", "Madi Brown", "Crystal Payne", "Olivia Kirby", "Sarah Stevenson", "Ella Greogory"]; 
+  return (
       <div>
         <Header />
         <h2 className="text-3xl pt-4 text-orange-400 font-bold flex justify-center">National League</h2>
@@ -26,8 +28,8 @@ function NationalLeague() {
         <div> 
           <div className="flex justify-around">
             <TeamList TeamName="Knights - Open B grade" PlayerList={KnightsTeam} Coach="Kaylie"/>
-            <TeamList TeamName="Paladins - Open B grade" PlayerList={KnightsTeam} Coach="Jason Chan"/>
-            <TeamList TeamName="Queens - Womens B grade" PlayerList={KnightsTeam} Coach="Kaylie"/>
+            <TeamList TeamName="Paladins - Open B grade" PlayerList={PaladinsTeam} Coach="Jason Chan"/>
+            <TeamList TeamName="Queens - Womens B grade" PlayerList={QueensTeam} Coach="Kaylie"/>
           </div>
         </div>
         
@@ -43,7 +45,9 @@ function NationalLeague() {
         <p className="font-bold text-gray-400 py-2">{TeamName}</p>
         {
           PlayerList.map((name, index) => (
-          <p className="text-orange-400" key={index+1}>{index+1}. {name}</p>
+            name !== "" && (
+              <p className="text-orange-400" key={index+1}>{index+1}. {name}</p>
+            )
           ))
         }
         <p>Coach: {Coach}</p>

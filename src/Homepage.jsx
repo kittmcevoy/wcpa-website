@@ -26,22 +26,7 @@ function homepage() {
           Create an about thing
         </div>
 
-        <div>
-          <table class="table-auto w-30 border-collapse border border-gray-300">
-            <tbody>
-              <tr class="hover:bg-gray-50">
-                <td class="px-4 py-2 border border-gray-300">President</td>
-              </tr>
-              <tr class="hover:bg-gray-50">
-                <td class="px-4 py-2 border border-gray-300">Charles Irvine-Ford</td>
-              </tr>
-              <tr class="hover:bg-gray-50">
-                <td class="px-4 py-2 border border-gray-300">wgtncanoepolo@gmail.com</td>
-              </tr>
-            </tbody>
-          </table>
-
-        </div>
+        
 
       </div>
 
