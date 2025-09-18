@@ -9,6 +9,7 @@ root.render(
   <React.StrictMode>
     <App />
     <title>Wellington Canoe Polo</title>
+    <link rel="icon" type="image/png" href="/images/WCPA logo.png" />
   </React.StrictMode>
 );
 
