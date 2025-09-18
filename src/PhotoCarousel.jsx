@@ -13,20 +13,19 @@ const PhotoCarousel = ({ photos }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-      console.log(currentIndex);
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [photos.length]);
 
 
   return (
-    <div className="relative w-120 max-w-sm mx-auto overflow-hidden">
+    <div className="w-screen overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out">
         <img
           src={photos[currentIndex]}
           alt={`photo 1`}
-          className="w-full object-cover"
+          className="w-full h-full object-cover transition-opacity duration-5000 ease-in-out opacity-100"
         />
       </div>
     </div>
